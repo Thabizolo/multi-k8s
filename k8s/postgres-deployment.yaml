@@ -16,6 +16,8 @@ spec:
         - name: postgres-storage
           persistentVolumeClaim:
             claimName: database-persistent-volume-claims
+            accessModes:
+              - ReadWriteMany
       containers:
         - name: postgres
           image: launcher.gcr.io/google/postgresql11
