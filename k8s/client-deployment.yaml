@@ -14,7 +14,7 @@ spec:
         spec:
             containers:
                 - name: client
-                  image: thabizolo/multi-client:v6
+                  image: thabizolo/multi-client:latest
                   ports:
                     - containerPort: 3000
 

@@ -14,7 +14,7 @@ spec:
         spec:
             containers:
                 - name: worker
-                  image: thabizolo/multi-worker:v6
+                  image: thabizolo/multi-worker:latest
                   env:
                     - name: REDIS_HOST
                       value: redis-cluster-ip-service

@@ -14,7 +14,7 @@ spec:
         spec:
             containers:
                 - name: server
-                  image: thabizolo/multi-server:v6
+                  image: thabizolo/multi-server:latest
                   ports:
                     - containerPort: 5000
                   env:
