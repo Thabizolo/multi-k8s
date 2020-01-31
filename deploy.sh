@@ -1,4 +1,4 @@
-docker build - t thabizolo/multi-client:latest -t thabizolo/multi-client:$SHA -f ./client/Dockerfile ./client
+docker build  -t thabizolo/multi-client:latest -t thabizolo/multi-client:$SHA -f ./client/Dockerfile ./client
 docker build  -t thabizolo/multi-server:latest -t thabizolo/multi-server:$SHA -f ./server/Dockerfile ./server
 docker build  -t thabizolo/multi-worker:latest -t thabizolo/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
