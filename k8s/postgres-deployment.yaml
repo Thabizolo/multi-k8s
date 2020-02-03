@@ -15,16 +15,16 @@ spec:
       volumes:
         - name: postgres-storage
           persistentVolumeClaim:
-            claimName: database-persistent-volume-claims
+            claimName: database-persistent-volume-claim
       containers:
         - name: postgres
-          image: launcher.gcr.io/google/postgresql11
+          image: postgres
           ports:
             - containerPort: 5432
           volumeMounts:
             - name: postgres-storage
               mountPath: /var/lib/postgresql/data
-              readOnly: false
+              subPath: postgres
           env:
             - name: PGPASSWORD
               valueFrom:
